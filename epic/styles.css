@@ -1,0 +1,27 @@
+#personaInfo h4,
+ #personaInfo p {
+	 display: inline;
+	 vertical-align: top;
+	 /*font-family: 'Open Sans', sans-serif;*/
+	 font-size: 16px;
+	 line-height: 28px;
+ }
+
+h2 {
+	color: gold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#userStory h2 {
+	font-size: 18.5px;
+	color: darkred;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#paragraphWidth p {
+	width: 650px;
+}
