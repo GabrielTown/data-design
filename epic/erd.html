@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conceptual and ERD Model</title>
+	<link rel="stylesheet" type="text/css" href="styles/erd-style.css"/>
+</head>
+<body style="font-family: 'Open Sans', sans-serif">
+	<ul>
+		<li><a href="index.html">Home</a> </li>
+		<li><a href="persona.html">Persona</a></li>
+		<li><a href="user-story.html">User Story</a></li>
+		<li><a href="use-case-interaction.html">Use Case Interaction</a></li>
+		<li><a href="erd.html">Conceptual Model and ERD</a></li>
+	</ul>
+	<h1>Mark's Conceptual Model and ERD </h1>
+	<h2>Conceptual Model</h2>
+	<div class = "block">
+		<h3>Entities & Attributes</h3>
+		<h4>PROFILE</h4>
+		<ul>
+			<li>profileId (primary key)</li>
+			<li>profileUserName</li>
+			<li>profileActivationToken</li>
+			<li>profileEmail</li>
+			<li>profileLocation</li>
+			<li>profileHash</li>
+		</ul>
+		<h4>ITEM</h4>
+		<ul>
+			<li>itemId (primary key)</li>
+			<li>itemProfileId (foreign key)</li>
+			<li>itemContent</li>
+			<li>itemDate</li>
+		</ul>
+		<h4>GEEKLIST</h4>
+		<ul>
+			<li>geeklistId (primary key)</li>
+			<li>geeklistProfileID (foreign key)</li>
+			<li>geeklistItemId (foreign key)</li>
+			<li>geeklistContent</li>
+			<li>geeklistDate</li>
+		</ul>
+		<h3>Relations</h3>
+		<ul>
+			<li>One <strong>Profile</strong> can add many <strong>Items - <em>(1 to n)</em></strong></li>
+			<li>One <strong>Profile</strong> can create many <strong>Geeklists - <em>(1 to n)</em></strong></li>
+			<li>Many <strong>Items</strong> can be added to many <strong>Geeklists - <em>(m to n)</em></strong></li>
+		</ul>
+	</div>
+	<h2>ERD</h2>
+	<img src="pics/ERDiagram.jpg" alt="ERD" height="421" width="722"/></body>
+	<br>
+	<h3>Find Out More</h3>
+	<ul style="list-style-type: none;">
+		<li style="color: black;"><a href="index.html"><h4>I JUST DON'T KNOW ANYMORE!</h4></a></li>
+	</ul>
+</html>
